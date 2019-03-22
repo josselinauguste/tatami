@@ -1,0 +1,27 @@
+<body>
+  <head>
+    <script src="js/board.js"></script>
+    <style>
+      .board {
+        display: inline-block;
+        background-image: url(img/goban1.jpg);
+        background-repeat: round;
+        -moz-box-shadow: 5px 5px 8px 0px #9b9b9b;
+        -webkit-box-shadow: 5px 5px 8px 0px #9b9b9b;
+        -o-box-shadow: 5px 5px 8px 0px #9b9b9b;
+        box-shadow: 5px 5px 8px 0px #9b9b9b;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=8);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <canvas></canvas>
+    </div>
+    
+    <script>
+      board(document.querySelector(".board canvas")).goban(19);
+    </script>
+  </body>
+</body>
